@@ -11,3 +11,8 @@ export interface TodoFormData {
   description: string;
   priority: number;
 }
+
+export interface QuoteInterface {
+  text: string;
+  author: string;
+}
