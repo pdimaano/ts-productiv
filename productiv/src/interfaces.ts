@@ -5,3 +5,9 @@ export interface TodoInterface {
   completed?: boolean;
   priority: number;
 }
+
+export interface TodoFormData {
+  title: string;
+  description: string;
+  priority: number;
+}
