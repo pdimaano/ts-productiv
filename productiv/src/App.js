@@ -1,7 +1,7 @@
-import React from "react";
 import TodoApp from "./TodoApp";
 import QuoteApp from "./QuoteApp";
 import Footer from "./Footer";
+import { TodoInterface } from "./interfaces";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 
@@ -20,7 +20,7 @@ function App() {
         </div>
       </header>
 
-      <section> 
+      <section>
         <QuoteApp/>
       </section>
 
