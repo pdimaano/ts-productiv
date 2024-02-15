@@ -46,7 +46,7 @@ function App() {
       </section>
 
       <section className="container mt-4">
-        <TodoApp initialTodos={} />
+        <TodoApp initialTodos={initialTodos} />
 
         <Footer />
       </section>
