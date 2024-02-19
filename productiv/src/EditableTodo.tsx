@@ -19,7 +19,7 @@ interface EditableTodoProps {
   update: (todo: TodoInterface) => void;
 }
 
-function EditableTodo({ todo, remove, update }) {
+function EditableTodo({ todo, remove, update }: EditableTodoProps) {
   const [isEditing, setIsEditing] = useState(false);
 
   /** Toggle if this is being edited */
@@ -33,8 +33,8 @@ function EditableTodo({ todo, remove, update }) {
   }
 
   /** Edit form saved; toggle isEditing and update in ancestor. */
-  function handleSave(formData) {
-    update({ id: todo.id, ...formData});
+  function handleSave(formData: TodoFormData) {
+    update({ ...formData, id: todo.id});
     setIsEditing(false);
   }
 
