@@ -13,6 +13,12 @@ import { TodoInterface, TodoFormData } from "./interfaces";
  * EditableTodoList -> EditableTodo -> { Todo, TodoForm }
  */
 
+interface EditableTodoProps {
+  todo: TodoInterface;
+  remove: (id: string) => void;
+  update: (todo: TodoInterface) => void;
+}
+
 function EditableTodo({ todo, remove, update }) {
   const [isEditing, setIsEditing] = useState(false);
 
