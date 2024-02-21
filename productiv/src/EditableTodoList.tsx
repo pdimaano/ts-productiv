@@ -1,5 +1,5 @@
-import React from "react";
 import EditableTodo from "./EditableTodo";
+import { TodoInterface } from "./interfaces";}
 
 /** Show list of editable todos.
  *
