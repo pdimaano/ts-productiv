@@ -17,15 +17,18 @@ interface EditableTodoListProps {
   remove: (id: string) => void;
 }
 
-function EditableTodoList({ todos, update, remove }) {
-  return todos.map(todo => (
-      <EditableTodo
-          key={todo.id}
-          todo={todo}
-          update={update}
-          remove={remove}
-      />
+function EditableTodoList({ todos, update, remove }: EditableTodoListProps) {
+
+  const todoList = todos.map(todo => (
+    <EditableTodo
+        key={todo.id}
+        todo={todo}
+        update={update}
+        remove={remove}
+    />
   ));
+
+  return <>{todoList}</>;
 }
 
 export default EditableTodoList;
