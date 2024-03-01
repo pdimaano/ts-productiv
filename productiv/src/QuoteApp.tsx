@@ -16,10 +16,10 @@ import QuoteDisplay from "./QuoteDisplay";
  * App -> QuoteApp -> QuoteDisplay
  */
 function QuoteApp() {
-  const [quote, setQuote] = useState(null);
+  const [quote, setQuote] = useState<QuoteInterface | null>(null);
 
   /** retrieve a random quote from quotes API */
-  async function getQuote() {
+  async function getQuote(): Promise<void> {
     const response = await axios.get("https://inspo-quotes-api.herokuapp.com/quotes/random");
     const randomQuote = response.data.quote;
     setQuote(randomQuote);
