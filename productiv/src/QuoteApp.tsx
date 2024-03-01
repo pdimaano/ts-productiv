@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import { QuoteInterface } from "./interfaces";
 import QuoteDisplay from "./QuoteDisplay";
 
 /** Component that retrieves and sets an inspirational quote,
