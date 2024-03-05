@@ -10,6 +10,13 @@ import { QuoteInterface } from "./interfaces";
  *
  * State: none
  */
+
+
+interface QuoteDisplayProps {
+  getQuote: () => void;
+  quote: QuoteInterface | null;
+}
+
 function QuoteDisplay({ getQuote, quote }) {
 
   function firstQuote() {
