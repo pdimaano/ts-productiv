@@ -1,4 +1,5 @@
 import "./QuoteDisplay.css";
+import { QuoteInterface } from "./interfaces";
 
 /** QuoteDisplay component that shows a quote
  * and a button that will retrieve a new quote
