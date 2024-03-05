@@ -17,33 +17,20 @@ interface QuoteDisplayProps {
   quote: QuoteInterface | null;
 }
 
-function QuoteDisplay({ getQuote, quote }) {
-
-  function firstQuote() {
-    return <div className="QuoteDisplay">
-      <button
+function QuoteDisplay({ getQuote, quote }: QuoteDisplayProps) {
+  return (
+    quote ? (
+      <div className="QuoteDisplay">
+        <p><i>{quote.text} - {quote.author}</i></p>
+        <button
           className="btn-sm QuoteDisplay-button"
-          onClick={getQuote}>Click here for an inspirational quøte!
-      </button>
-    </div>
-  }
-
-  function showQuote() {
-    return <div className="QuoteDisplay">
-      <p><i>{quote.text} - {quote.author}</i></p>
-      <button
-          className="btn-sm QuoteDisplay-button"
-          onClick={getQuote}>Nü quøte
-      </button>
-    </div>
-
-  }
-
-  if (quote) {
-    return showQuote();
-  } else {
-    return firstQuote();
-  }
+          onClick={getQuote}>New Quote
+        </button>
+      </div>
+    ) : (
+        
+    )
+  )
 };
 
 export default QuoteDisplay;
