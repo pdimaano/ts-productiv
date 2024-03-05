@@ -28,9 +28,14 @@ function QuoteDisplay({ getQuote, quote }: QuoteDisplayProps) {
         </button>
       </div>
     ) : (
-        
+      <div className="QuoteDisplay">
+        <button
+          className="btn-sm QuoteDisplay-button"
+          onClick={getQuote}>Click here for an inspirational quote
+        </button>
+      </div>
     )
-  )
+  );
 };
 
 export default QuoteDisplay;
