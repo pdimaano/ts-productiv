@@ -1,4 +1,5 @@
 import React from "react";
+import { TodoInterface } from "./interfaces";
 
 /** Simple presentation component for a todo.
  *
