@@ -9,7 +9,7 @@ import { TodoInterface } from "./interfaces";
  * { EditableTodo, TopTodo } -> Todo
  **/
 
-function Todo({ todo }) {
+function Todo({ todo }: { todo: TodoInterface}) {
   return (
       <div className="Todo">
         <div><b>{todo.title}</b> <small>(priority: {todo.priority})</small></div>
