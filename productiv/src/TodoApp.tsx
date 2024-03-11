@@ -18,18 +18,18 @@ import { TodoInterface, TodoFormData } from "./interfaces";
  * App -> TodoApp -> { TodoForm, EditableTodoList }
  */
 
-function TodoApp({ initialTodos }) {
+function TodoApp({ initialTodos }: { initialTodos: TodoInterface[] }) {
   const [todos, setTodos] = useState(initialTodos);
 
   console.log("TodoApp", initialTodos, todos);
 
   /** add a new todo to list */
-  function create(newTodo) {
-    setTodos(todos => [...todos, { id: uuid(), ...newTodo }]);
+  function create(newTodo: TodoFormData) {
+    setTodos(todos => [...todos, { ...newTodo, id: uuid() }]);
   }
 
   /** update a todo with updatedTodo */
-  function update(updatedTodo) {
+  function update(updatedTodo: TodoInterface) {
     setTodos(todos =>
         todos.map(todo =>
             todo.id === updatedTodo.id ? updatedTodo : todo,
@@ -38,7 +38,7 @@ function TodoApp({ initialTodos }) {
   }
 
   /** delete a todo by id */
-  function remove(id) {
+  function remove(id: string) {
     setTodos(todos => todos.filter(todo => todo.id !== id));
   }
 
