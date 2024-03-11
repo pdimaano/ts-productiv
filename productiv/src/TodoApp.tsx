@@ -4,6 +4,7 @@ import { v4 as uuid } from "uuid";
 import TodoForm from "./TodoForm";
 import EditableTodoList from "./EditableTodoList";
 import TopTodo from "./TopTodo";
+import { TodoInterface, TodoFormData } from "./interfaces";
 
 /** App for managing a todo list.
  *
