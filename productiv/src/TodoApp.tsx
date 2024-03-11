@@ -21,8 +21,6 @@ import { TodoInterface, TodoFormData } from "./interfaces";
 function TodoApp({ initialTodos }: { initialTodos: TodoInterface[] }) {
   const [todos, setTodos] = useState(initialTodos);
 
-  console.log("TodoApp", initialTodos, todos);
-
   /** add a new todo to list */
   function create(newTodo: TodoFormData) {
     setTodos(todos => [...todos, { ...newTodo, id: uuid() }]);
