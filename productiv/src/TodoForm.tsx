@@ -17,11 +17,11 @@ interface TodoFormProps {
 
 const defaultInitialFormData: TodoFormData = { title: "", description: "", priority: 1 };
 
-function TodoForm({ initialFormData = defaultInitialFormData, handleSave }) {
+function TodoForm({ initialFormData = defaultInitialFormData, handleSave : TodoFormProps}) {
   const [formData, setFormData] = useState(initialFormData);
 
   /** Update form input. */
-  function handleChange(evt) {
+  function handleChange(evt: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     const input = evt.target;
     setFormData(formData => ({
       ...formData,
@@ -30,7 +30,7 @@ function TodoForm({ initialFormData = defaultInitialFormData, handleSave }) {
   }
 
   /** Call parent function and clear form. */
-  function handleSubmit(evt) {
+  function handleSubmit(evt: React.FormEvent<HTMLFormElement>) {
     evt.preventDefault();
     handleSave(formData);
     setFormData(initialFormData);
