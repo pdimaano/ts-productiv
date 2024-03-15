@@ -17,7 +17,7 @@ interface TodoFormProps {
 
 const defaultInitialFormData: TodoFormData = { title: "", description: "", priority: 1 };
 
-function TodoForm({ initialFormData = defaultInitialFormData, handleSave : TodoFormProps}) {
+function TodoForm({ initialFormData = defaultInitialFormData, handleSave }: TodoFormProps) {
   const [formData, setFormData] = useState(initialFormData);
 
   /** Update form input. */
