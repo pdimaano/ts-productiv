@@ -10,7 +10,12 @@ import { TodoFormData } from "./interfaces";
 * { TodoApp, EditableTodo } -> TodoForm
 */
 
-const defaultInitialFormData = { title: "", description: "", priority: 1 };
+interface TodoFormProps {
+  initialFormData?: TodoFormData;
+  handleSave: (formData: TodoFormData) => void;
+}
+
+const defaultInitialFormData: TodoFormData = { title: "", description: "", priority: 1 };
 
 function TodoForm({ initialFormData = defaultInitialFormData, handleSave }) {
   const [formData, setFormData] = useState(initialFormData);
