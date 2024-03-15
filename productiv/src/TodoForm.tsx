@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-
-const defaultInitialFormData = { title: "", description: "", priority: 1 };
+import { TodoFormData } from "./interfaces";
 
 /** Form for adding.
  *
  * Props:
  * - initialFormData
  * - handleSave: function to call in parent.
- *
- * { TodoApp, EditableTodo } -> TodoForm
- */
+*
+* { TodoApp, EditableTodo } -> TodoForm
+*/
+
+const defaultInitialFormData = { title: "", description: "", priority: 1 };
 
 function TodoForm({ initialFormData = defaultInitialFormData, handleSave }) {
   const [formData, setFormData] = useState(initialFormData);
