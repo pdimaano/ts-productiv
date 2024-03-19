@@ -11,7 +11,7 @@ import { TodoInterface } from "./interfaces";
  * TodoApp -> TopTodo
  */
 
-function TopTodo({ todos }) {
+function TopTodo({ todos }: { todos: TodoInterface[]}) {
   if (todos.length === 0) return null;
 
   // lowest-priority # is the highest priority
