@@ -11,7 +11,7 @@ const todo = {
 
 describe("EditableTodo Tests", function () {
   it("renders without crashing", function () {
-    render(<EditableTodo todo={todo} />);
+    render(<EditableTodo todo={todo} update={jest.fn} remove={jest.fn}/>);
   });
 
   it("contains correct fields", function () {
