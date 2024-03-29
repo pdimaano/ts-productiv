@@ -26,7 +26,7 @@ describe("EditableTodoList Tests", function () {
   ];
 
   it("renders without crashing", function () {
-    render(<EditableTodoList todos={initialTodos}/>)
+    render(<EditableTodoList update={jest.fn} remove={jest.fn} todos={initialTodos}/>)
   });
 
   it("displays all todos", function () {
