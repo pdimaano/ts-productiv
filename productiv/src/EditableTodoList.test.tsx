@@ -30,7 +30,7 @@ describe("EditableTodoList Tests", function () {
   });
 
   it("displays all todos", function () {
-    const result = render(<EditableTodoList todos={initialTodos} />);
+    const result = render(<EditableTodoList update={jest.fn} remove={jest.fn} todos={initialTodos} />);
     expect(result.queryByText("Code!")).toBeInTheDocument();
     expect(result.queryByText("Make dinner")).toBeInTheDocument();
     expect(result.queryByText("Go to bed")).toBeInTheDocument();
