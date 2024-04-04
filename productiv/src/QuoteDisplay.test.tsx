@@ -11,7 +11,7 @@ describe("QuoteDisplay Tests", function () {
   };
 
   it("renders without crashing", function () {
-    render(<QuoteDisplay quote={null} />);
+    render(<QuoteDisplay getQuote={jest.fn} quote={null} />);
   });
 
   it("renders correct button when a quote is not provided", function () {
