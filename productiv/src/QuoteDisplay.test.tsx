@@ -15,7 +15,7 @@ describe("QuoteDisplay Tests", function () {
   });
 
   it("renders correct button when a quote is not provided", function () {
-    const result = render(<QuoteDisplay quote={null} />);
+    const result = render(<QuoteDisplay getQuote={jest.fn} quote={null} />);
     expect(result.queryByText("Click here for an inspirational quøte!")).toBeInTheDocument();
     expect(result.queryByText("Nü quøte")).not.toBeInTheDocument();
   });
