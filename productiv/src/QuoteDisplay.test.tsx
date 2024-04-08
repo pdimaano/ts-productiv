@@ -21,7 +21,7 @@ describe("QuoteDisplay Tests", function () {
   });
 
   it("renders correct button when a quote is provided", function () {
-    const result = render(<QuoteDisplay quote={quote} />);
+    const result = render(<QuoteDisplay getQuote={jest.fn} quote={quote} />);
     expect(result.queryByText("Click here for an inspirational quøte!")).not.toBeInTheDocument();
     expect(result.queryByText("Nü quøte")).toBeInTheDocument();
   });
