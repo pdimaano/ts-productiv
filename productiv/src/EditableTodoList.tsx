@@ -1,5 +1,5 @@
 import EditableTodo from "./EditableTodo";
-import { TodoInterface } from "./interfaces";}
+import { TodoInterface } from "./interfaces";
 
 /** Show list of editable todos.
  *
