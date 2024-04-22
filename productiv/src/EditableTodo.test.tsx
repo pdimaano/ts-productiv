@@ -25,7 +25,7 @@ describe("EditableTodo Tests", function () {
     const removeMock = jest.fn();
     removeMock.mockClear();
 
-    const { container } = render(<EditableTodo todo={todo} remove={removeMock}/>)
+    const { container } = render(<EditableTodo todo={todo} update={jest.fn} remove={removeMock}/>)
     const deleteButton = container.querySelector(
         ".EditableTodo-delBtn");
     fireEvent.click(deleteButton);
