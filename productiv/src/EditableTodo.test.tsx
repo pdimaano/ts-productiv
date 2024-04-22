@@ -3,7 +3,7 @@ import { render, fireEvent } from "@testing-library/react";
 import EditableTodo from "./EditableTodo";
 
 const todo = {
-  id: 1,
+  id: "1",
   title: "Code!",
   description: "Write some code",
   priority: 2,
