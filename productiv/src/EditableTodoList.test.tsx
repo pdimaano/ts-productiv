@@ -18,7 +18,7 @@ describe("EditableTodoList Tests", function () {
       priority: 1,
     },
     {
-      id: 3,
+      id: "3",
       title: "Go to bed",
       description: "In bed by 11:15",
       priority: 3,
