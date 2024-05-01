@@ -6,7 +6,7 @@ import EditableTodoList from "./EditableTodoList";
 describe("EditableTodoList Tests", function () {
   const initialTodos = [
     {
-      id: 1,
+      id: "1",
       title: "Code!",
       description: "Write some code",
       priority: 2,
