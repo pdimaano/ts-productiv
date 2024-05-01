@@ -12,7 +12,7 @@ describe("EditableTodoList Tests", function () {
       priority: 2,
     },
     {
-      id: 2,
+      id: "2",
       title: "Make dinner",
       description: "Cook something healthy",
       priority: 1,
