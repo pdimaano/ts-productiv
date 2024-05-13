@@ -4,10 +4,8 @@ import QuoteDisplay from "./QuoteDisplay";
 describe("QuoteDisplay Tests", function () {
 
   const quote = {
-    quote: {
       "text": "Society develops wit, but its contemplation alone forms genius.",
       "author": "Madame de Stael"
-    }
   };
 
   it("renders without crashing", function () {
