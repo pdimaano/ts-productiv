@@ -3,7 +3,7 @@ import Todo from "./Todo";
 
 
 const todo = {
-  id: 1,
+  id: "1",
   title: "Code!",
   description: "Write some code",
   priority: 2,
