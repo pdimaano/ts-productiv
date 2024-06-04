@@ -10,7 +10,6 @@
     "@types/node": "*",
     "@types/react": "*",
     "@types/react-dom": "*",
-    "@types/uuid": "*",
     "axios": "*",
     "bootstrap": "*",
     "react": "*",
@@ -40,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.8"
   }
 }
