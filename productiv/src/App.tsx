@@ -37,7 +37,7 @@ function App() {
       <header className="container-fluid pt-4 pb-1">
         <div className="container">
           <h1>Prøductïv</h1>
-          <p className="lead">The best name in todo-list management</p>
+          <p className="lead">The best todo-list manager</p>
         </div>
       </header>
 
