@@ -31,7 +31,7 @@ function QuoteDisplay({ getQuote, quote }: QuoteDisplayProps) {
       <div className="QuoteDisplay">
         <button
           className="btn-sm QuoteDisplay-button"
-          onClick={getQuote}>Click here for a new quote!
+          onClick={getQuote}>Click here for a new quote
         </button>
       </div>
     )
