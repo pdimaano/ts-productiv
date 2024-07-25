@@ -62,7 +62,7 @@ function TodoApp({ initialTodos }: { initialTodos: TodoInterface[] }) {
             )}
 
             <section>
-              <h3 className="mb-3">Add A Todo</h3>
+              <h3 className="mb-3">Add A New Todo:</h3>
               <TodoForm handleSave={create} />
             </section>
           </div>
