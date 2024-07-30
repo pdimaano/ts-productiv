@@ -21,7 +21,7 @@ function QuoteDisplay({ getQuote, quote }: QuoteDisplayProps) {
   return (
     quote ? (
       <div className="QuoteDisplay">
-        <p><i>{quote.text} - {quote.author}</i></p>
+        <p><i>"{quote.text} - {quote.author}"</i></p>
         <button
           className="btn-sm QuoteDisplay-button"
           onClick={getQuote}>New Quote
