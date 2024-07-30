@@ -74,7 +74,7 @@ function TodoForm({ initialFormData = defaultInitialFormData, handleSave }: Todo
                     onChange={handleChange}
                     className="form-control form-control-sm d-inline-flex"
             >
-              <option value={1}>Ultra-Über</option>
+              <option value={1}>High</option>
               <option value={2}>Über</option>
               <option value={3}>Meh</option>
             </select>
