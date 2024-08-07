@@ -76,7 +76,7 @@ function TodoForm({ initialFormData = defaultInitialFormData, handleSave }: Todo
             >
               <option value={1}>High</option>
               <option value={2}>Medium</option>
-              <option value={3}>Meh</option>
+              <option value={3}>Low</option>
             </select>
           </div>
           <button className="btn-primary btn btn-sm NewTodoForm-addBtn">
