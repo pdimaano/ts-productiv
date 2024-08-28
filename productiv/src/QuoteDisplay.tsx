@@ -24,14 +24,14 @@ function QuoteDisplay({ getQuote, quote }: QuoteDisplayProps) {
         <p><i>"{quote.text} - {quote.author}"</i></p>
         <button
           className="btn-sm QuoteDisplay-button"
-          onClick={getQuote}>New Quote
+          onClick={getQuote}>New Quote!
         </button>
       </div>
     ) : (
       <div className="QuoteDisplay">
         <button
           className="btn-sm QuoteDisplay-button"
-          onClick={getQuote}>Click here for a new quote!
+          onClick={getQuote}>Click here for an inspirational quote!
         </button>
       </div>
     )
