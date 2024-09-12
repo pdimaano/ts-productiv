@@ -80,7 +80,7 @@ function TodoForm({ initialFormData = defaultInitialFormData, handleSave }: Todo
             </select>
           </div>
           <button className="btn-primary btn btn-sm NewTodoForm-addBtn">
-            Submit
+            Go!
           </button>
         </div>
 
