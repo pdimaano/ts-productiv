@@ -6,7 +6,7 @@ function Footer() {
   return (
       <footer className="App-footer mt-5 text-muted">
         <small>
-        Copyright ©2022
+        Copyright ©2024
         </small>
       </footer>
   )
