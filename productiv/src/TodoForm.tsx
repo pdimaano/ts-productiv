@@ -53,7 +53,7 @@ function TodoForm({ initialFormData = defaultInitialFormData, handleSave }: Todo
 
         <div className="mb-3">
           <textarea
-              id="newTodo-description"
+              id="newTodo-summary"
               name="description"
               className="form-control"
               placeholder="Summary"
