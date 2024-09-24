@@ -59,7 +59,7 @@ function TodoForm({ initialFormData = defaultInitialFormData, handleSave }: Todo
               placeholder="Summary"
               onChange={handleChange}
               value={formData.description}
-              aria-label="Description"
+              aria-label="Summary"
           />
         </div>
 
