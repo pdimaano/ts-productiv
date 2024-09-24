@@ -54,7 +54,7 @@ function TodoForm({ initialFormData = defaultInitialFormData, handleSave }: Todo
         <div className="mb-3">
           <textarea
               id="newTodo-summary"
-              name="description"
+              name="summary"
               className="form-control"
               placeholder="Summary"
               onChange={handleChange}
