@@ -8,7 +8,7 @@ export interface TodoInterface {
 
 export interface TodoFormData {
   title: string;
-  description: string;
+  summary: string;
   priority: number;
 }
 
